@@ -8,7 +8,10 @@ public class SimpleCalculatorTests
     {
         // Arrange
         var initialValue = 5;
-        var calculator = new SimpleCalculator(initialValue);
+        var calculator = new SimpleCalculator()
+        {
+            Value = initialValue
+        };
 
         // Act
         calculator.Increment();
@@ -22,7 +25,10 @@ public class SimpleCalculatorTests
     {
         // Arrange
         var initialValue = 5;
-        var calculator = new SimpleCalculator(initialValue);
+        var calculator = new SimpleCalculator()
+        {
+            Value = initialValue
+        };
 
         // Act
         calculator.Decrement();
@@ -36,7 +42,10 @@ public class SimpleCalculatorTests
     {
         // Arrange
         var initialValue = 5;
-        var calculator = new SimpleCalculator(initialValue);
+        var calculator = new SimpleCalculator()
+        {
+            Value = initialValue
+        };
 
         // Act
         calculator.Double();
@@ -50,7 +59,10 @@ public class SimpleCalculatorTests
     {
         // Arrange
         var initialValue = 5;
-        var calculator = new SimpleCalculator(initialValue);
+        var calculator = new SimpleCalculator()
+        {
+            Value = initialValue
+        };;
 
         // Act
         calculator.AddRandomValue();

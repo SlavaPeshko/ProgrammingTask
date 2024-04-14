@@ -26,7 +26,10 @@
                 return;
             }
 
-            var calculator = new SimpleCalculator(parsedValue);
+            var calculator = new SimpleCalculator()
+            {
+                Value = parsedValue
+            };
             var commandManager = new CommandManager();
 
             // Exiting the Program, like to add command to exit the program

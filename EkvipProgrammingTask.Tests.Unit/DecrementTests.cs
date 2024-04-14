@@ -10,7 +10,10 @@ public class DecrementTests
     {
         // Arrange
         var initialValue = 5;
-        var calculator = new SimpleCalculator(initialValue);
+        var calculator = new SimpleCalculator()
+        {
+            Value = initialValue
+        };
         var decrement = new Decrement(calculator);
 
         // Act
@@ -25,7 +28,10 @@ public class DecrementTests
     {
         // Arrange
         var initialValue = 5;
-        var calculator = new SimpleCalculator(initialValue);
+        var calculator = new SimpleCalculator()
+        {
+            Value = initialValue
+        };
         var decrement = new Decrement(calculator);
 
         // Act

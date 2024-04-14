@@ -10,7 +10,10 @@ public class IncrementTests
     {
         // Arrange
         var initialValue = 5;
-        var calculator = new SimpleCalculator(initialValue);
+        var calculator = new SimpleCalculator()
+        {
+            Value = initialValue
+        };
         var increment = new Increment(calculator);
 
         // Act
@@ -25,7 +28,10 @@ public class IncrementTests
     {
         // Arrange
         var initialValue = 5;
-        var calculator = new SimpleCalculator(initialValue);
+        var calculator = new SimpleCalculator()
+        {
+            Value = initialValue
+        };
         var increment = new Increment(calculator);
 
         // Act

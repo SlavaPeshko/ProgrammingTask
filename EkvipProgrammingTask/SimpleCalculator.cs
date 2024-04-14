@@ -3,18 +3,12 @@
 public class SimpleCalculator
 {
     private int _value;
-    private readonly Random _random;
+    private readonly Random _random = new Random();
 
     public int Value
     {
         get => _value;
         set => _value = value;
-    }
-
-    public SimpleCalculator(int value)
-    {
-        _value = value;
-        _random = new Random();
     }
 
     public void Increment()
